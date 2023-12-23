@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM 1</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column; /* Align items vertically */
+        }
+
+        h1 {
+            color: #ffc451;
+            margin-bottom: 20px; /* Add some spacing between h1 and form */
+        }
+
+        form {
+            background-color: #333;
+            padding: 20px;
+            border: 2px solid #ffc451; /* Yellow border */
+            border-radius: 10px;
+            width: 35%;
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #555;
+            color: #fff;
+            background-image: url('/assets/img/user.png'); /* Add your user icon image path */
+            background-repeat: no-repeat;
+            background-position: 10px center; /* Adjust the position of the icon */
+            padding-left: 40px; /* Make room for the icon */
+        }
+
+        input[type="password"] {
+            background-image: url('/assets/img/user.png'); /* Add your user icon imagepassword icon image path */
+        }
+
+        button {
+            background-color: #ffc451;
+            color: #222;
+            padding: 13px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            width: 80%;
+            
+        }
+
+        button:hover {
+            background-color: #ddd;
+            transition: 0.3s;
+        }
+        @media screen and (max-width: 720px) {
+            form{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <form action="login.php" method="post">
+        <h1 align="center">Selamat Datang di SIM 1</h1>
+        <br>
+        <input type="text" name="username" placeholder="Username" autocomplete="off" required>
+        <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+        <br>
+        <button type="submit">Login</button>
+        
+    </form>
+</body>
+</html>
